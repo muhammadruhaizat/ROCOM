@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="my.gov.miros.rocom" version="3.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>ROCOM</name>
+    <description>
+        Road Surface Condition Monitoring System Utilizing Motorcycle (ROCOM)
+    </description>
+    <author email="muhammadruhaizat@miros.gov.my" href="miros.gov.my">
+        ROCOM Development Team
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon density="ldpi" src="res/android/icon-36-ldpi.png" />
+        <icon density="mdpi" src="res/android/icon-48-mdpi.png" />
+        <icon density="hdpi" src="res/android/icon-72-.png" />
+        <icon density="xhdpi" src="res/android/icon-96-.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <icon height="57" src="res/ios/icon-57.png" width="57" />
+        <icon height="114" src="res/ios/icon-57-2x.png" width="114" />
+        <icon height="72" src="res/ios/icon-72.png" width="72" />
+        <icon height="144" src="res/ios/icon-72-2x.png" width="144" />
+    </platform>
+    <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
+    <plugin name="cordova-plugin-camera-preview" spec="https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git" />
+    <plugin name="cordova-plugin-insomnia" spec="https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git" />
+</widget>

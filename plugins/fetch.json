@@ -1,0 +1,50 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-geolocation": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-geolocation@4.0.1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-camera-preview": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "kr.co.joycorp.cordova.exitapp": {
+    "source": {
+      "type": "registry",
+      "id": "kr.co.joycorp.cordova.exitapp"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "mo-force-app-close": {
+    "source": {
+      "type": "registry",
+      "id": "mo-force-app-close"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-insomnia": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

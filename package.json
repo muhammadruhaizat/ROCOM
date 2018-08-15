@@ -1,0 +1,31 @@
+{
+    "name": "helloworld",
+    "displayName": "HelloCordova",
+    "version": "1.0.0",
+    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Apache Cordova Team",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-force-app-close": "^1.0.1",
+        "cordova-plugin-camera-preview": "git+https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git",
+        "cordova-plugin-exitapp2": "^1.0.4",
+        "cordova-plugin-geolocation": "^4.0.1",
+        "cordova-plugin-insomnia": "git+https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git",
+        "cordova-plugin-whitelist": "^1.3.3"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-geolocation": {},
+            "cordova-plugin-camera-preview": {},
+            "kr.co.joycorp.cordova.exitapp": {},
+            "mo-force-app-close": {},
+            "cordova-plugin-insomnia": {}
+        },
+        "platforms": []
+    }
+}

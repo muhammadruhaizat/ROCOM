@@ -1,0 +1,101 @@
+<div class="page" data-name="settings">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="title">Settings</div>
+    </div>
+  </div>
+  <div class="page-content">
+		<div class="block block-strong">
+		  <div class="list no-hairlines-md">
+			<ul>
+				<li class="item-content item-input">
+				  <div class="item-inner">
+					<div class="item-title item-label">Data logger frequency</div>
+					<div class="item-input-wrap">
+						<p>
+							<label class="radio">
+								<input type="radio" name="frequency" value="0.5">
+								<i class="icon-radio"></i>
+							</label> 0.5 seconds
+							<br/>
+							<label class="radio">
+								<input type="radio" name="frequency" value="1">
+								<i class="icon-radio"></i>
+								</label> 1 second
+						</p>
+					  <span class="input-clear-button"></span>
+					</div>
+				  </div>
+				</li>
+				<li class="item-content item-input">
+				  <div class="item-inner">
+					<div class="item-title item-label">Record Video</div>
+					<div class="item-input-wrap">
+						<p>
+							<label class="radio">
+								<input type="radio" name="recordvideo" value="yes">
+								<i class="icon-radio"></i>
+							</label> Yes
+							<br/>
+							<label class="radio">
+								<input type="radio" name="recordvideo" value="no">
+								<i class="icon-radio"></i>
+							</label> No
+							<br/>
+							<br/>
+							<button class="col button button-fill vCam" onclick="viewCamera();">View Camera</button>
+						</p>
+					  <span class="input-clear-button"></span>
+					</div>
+				  </div>
+				</li>
+				<li class="item-content item-input">
+				  <div class="item-inner">
+					<div class="item-title item-label">Server's URL</div>
+					<div class="item-input-wrap">
+					  <input type="text" placeholder="http://www.mroads.miros.gov.my/rocom">
+					  <span class="input-clear-button"></span>
+					</div>
+				  </div>
+				</li>
+				<li class="item-content item-input">
+				  <div class="item-inner">
+					<div class="item-title item-label"></div>
+					<div class="item-input-wrap">
+						<button class="col button button-fill color-green">Save</button>
+					</div>
+				  </div>
+				</li>
+			</ul>
+			<ul>
+				<li class="item-content item-input">
+				  <div class="item-inner">
+					<div class="item-title item-label">Live Data</div>
+					<br/>
+					<div class="item-title item-label">X: <span class="sX"></span></div>
+					<div class="item-title item-label">Y: <span class="sY"></span></div>
+					<div class="item-title item-label">Z: <span class="sZ"></span></div>
+					<div class="item-title item-label">Lat: <span class="sLat"></span></div>
+					<div class="item-title item-label">Long: <span class="sLong"></span></div>
+					<div class="item-title item-label">Date: <span class="sDate"></span></div>
+					<div class="item-title item-label">Time: <span class="sTime"></span></div>
+				  </div>
+				</li>
+			</ul>
+			<!--<ul>
+				Record video
+				<input type="radio" name="video" value="yes"> Yes
+				<input type="radio" name="video" value="no"> No
+				<br/>
+				<input type="button" class="button" value="View Camera" onclick="viewCamera();" style="width:auto;" />
+			</ul>
+			<ul>
+				Server URL
+				<input type="text" name="url" value="http://mroads.miros.gov.my/rocom/mobile" style="width:auto;" />
+			</ul>
+			<br/>
+			<input type="button" class="button" value="Save" style="width:auto;margin:auto;" />-->
+		  </div>
+		</div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "ROCOM",
+  "short_name": "ROCOM",
+  "version": "my.gov.miros.rocom",
+  "description": "Road Surface Condition Monitoring System Utilizing Motorcycle (ROCOM)",
+  "author": "ROCOM Development Team",
+  "icons": [],
+  "start_url": "index.html",
+  "permissions": ["geolocation"]
+}

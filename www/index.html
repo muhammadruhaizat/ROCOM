@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, see:
+      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+  Some notes:
+      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+          * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>ROCOM</title>
+
+  <link rel="stylesheet" href="framework7/css/framework7.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar"></div>
+    <!-- Left panel with cover effect-->
+    <div class="panel no-panel-left panel-cover theme-light">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+            </div>
+          </div>
+          <div class="page-content">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right panel with reveal effect-->
+    <div class="panel no-panel-right panel-reveal theme-dark">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title">Right Panel</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">Right panel content goes here</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Views/Tabs container -->
+    <div class="views tabs ios-edges">
+      <!-- Tabbar for switching views-tabs -->
+      <div class="toolbar tabbar-labels toolbar-bottom-md">
+        <div class="toolbar-inner">
+          <a href="#view-home" class="tab-link tab-link-active">
+            <i class="icon f7-icons ios-only">home</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">home_fill</i>
+            <i class="icon material-icons md-only">home</i>
+            <span class="tabbar-label">Home</span>
+          </a>
+          <a href="#view-ride" class="tab-link">
+            <i class="icon f7-icons ios-only">play</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">play_fill</i>
+            <i class="icon material-icons md-only">play</i>
+            <span class="tabbar-label">Ride</span>
+          </a>
+          <a href="#view-datalist" class="tab-link">
+            <i class="icon f7-icons ios-only">data</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">data_fill</i>
+            <i class="icon material-icons md-only">data</i>
+            <span class="tabbar-label">List</span>
+          </a>
+          <a href="#view-settings" class="tab-link">
+            <i class="icon f7-icons ios-only">settings</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
+            <i class="icon material-icons md-only">settings</i>
+            <span class="tabbar-label">Settings</span>
+          </a>
+          <a href="#view-profile" class="tab-link">
+            <i class="icon f7-icons ios-only">person</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">person_fill</i>
+            <i class="icon material-icons md-only">person</i>
+            <span class="tabbar-label">Profile</span>
+          </a>
+        </div>
+      </div>
+      <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
+      <div id="view-home" class="view view-main tab tab-active">
+        <!-- Page, data-name contains page name which can be used in page callbacks -->
+        <div class="page" data-name="home">
+          <!-- Top Navbar -->
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="left">
+                <a href="#" class="link icon-only panel-open" data-panel="left">
+                  <!--<i class="icon f7-icons ios-only">menu</i>
+                  <i class="icon material-icons md-only">menu</i>-->
+                </a>
+              </div>
+              <div class="title sliding"><img src="img/newLogoClear.png" style="width:30%;margin:auto;"/></div>
+              <div class="right">
+                <a href="/about/" class="link icon-only">
+                  <i class="icon f7-icons ios-only">info</i>
+                  <i class="icon material-icons md-only">info</i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scrollable page content-->
+          <div class="page-content">
+            <div class="block-title">Summary</div>
+            <div class="block block-strong">
+				<table style="width:100%;">
+					<tr>
+						<td>
+							<div class="divBlock" style="background-color:#d9ead3;">
+								<div>Total<br/>Ride<br/><strong>00</strong></div>
+							</div>
+						</td>
+						<td>
+							<div class="divBlock" style="background-color:#a2c4c9;">
+								<div>Total<br/>Distance<br/><strong>00 KM</strong></div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="divBlock" style="background-color:#a4c2f4;">
+								<div>Total<br/>Duration<br/><strong>00:00</strong></div>
+							</div>
+						</td>
+						<td>
+							<div class="divBlock" style="background-color:#f9cb9c;">
+								<div>Total<br/>Anomaly<br/><strong>00</strong></div>
+							</div>
+						</td>
+					</tr>
+				</table>
+				
+			</div>
+            <div class="block-title">Last Ride</div>
+            <div class="block block-strong">
+				<table style="width:100%;">
+					<tr>
+						<td>
+							<div class="divBlock" style="background-color:#a2c4c9;">
+								<div>Total<br/>Distance<br/><strong>00 KM</strong></div>
+							</div>
+						</td>
+						<td>
+							<div class="divBlock" style="background-color:#a4c2f4;">
+								<div>Total<br/>Duration<br/><strong>00:00</strong></div>
+							</div>
+						</td>
+						<td>
+							<div class="divBlock" style="background-color:#f9cb9c;">
+								<div>Total<br/>Anomaly<br/><strong>00</strong></div>
+							</div>
+						</td>
+					</tr>
+				</table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ride View -->
+      <div id="view-ride" class="view tab">
+        <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
+      </div>
+
+      <!-- List View -->
+      <div id="view-datalist" class="view tab">
+        <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
+      </div>
+
+      <!-- Settings View -->
+      <div id="view-settings" class="view tab">
+        <!-- Settings page will be loaded here dynamically from /settings/ route -->
+      </div>
+
+      <!-- Settings View -->
+      <div id="view-about" class="view tab">
+        <!-- Settings page will be loaded here dynamically from /settings/ route -->
+      </div>
+
+      <!-- Login View -->
+      <div id="view-profile" class="view tab">
+        <!-- Settings page will be loaded here dynamically from /settings/ route -->
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Framework7 library -->
+  <script src="framework7/js/framework7.min.js"></script>
+
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+
+  <!-- Moment scripts -->
+  <script src="js/moment.min.js"></script>
+  <!-- Cordova -->
+  
+  <script src="cordova.js"></script>
+  
+  <script src="js/jquery-3.3.1.min.js"></script>
+  
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMhjC-7qyJfotZ5L0NIeB5sTBmYQ0cNAo"></script>
+  
+  <script src="js/latlong.js"></script>
+
+  <!-- Your custom app scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="my.gov.miros.rocom" version="3.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>ROCOM</name>
+    <description>
+        Road Surface Condition Monitoring System Utilizing Motorcycle (ROCOM)
+    </description>
+    <author email="muhammadruhaizat@miros.gov.my" href="miros.gov.my">
+        ROCOM Development Team
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <!--
+            ldpi    : 36x36 px
+            mdpi    : 48x48 px
+            hdpi    : 72x72 px
+            xhdpi   : 96x96 px
+            xxhdpi  : 144x144 px
+            xxxhdpi : 192x192 px
+        -->
+        <icon src="img/icon/android/icon-36-ldpi.png" density="ldpi" />
+        <icon src="img/icon/android/icon-48-mdpi.png" density="mdpi" />
+        <icon src="img/icon/android/icon-72-.png" density="hdpi" />
+        <icon src="img/icon/android/icon-96-.png" density="xhdpi" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <icon src="img/icon/ios/icon-57.png" width="57" height="57" />
+        <icon src="img/icon/ios/icon-57-2x.png" width="114" height="114" />
+        <icon src="img/icon/ios/icon-72.png" width="72" height="72" />
+        <icon src="img/icon/ios/icon-72-2x.png" width="144" height="144" />
+    </platform>
+    <plugin name="cordova-plugin-geolocation" version="2.1.0" />
+    <plugin name="cordova-plugin-camera-preview" spec="https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git" />
+    <plugin name="cordova-plugin-insomnia" spec="https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git" />
+</widget>
